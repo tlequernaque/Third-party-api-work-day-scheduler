@@ -12,6 +12,16 @@ textarea {
   padding: 10px;
 }
 
+.notify {
+  visibility: hidden;
+  padding: 10px;
+  color:#000000;
+}
+
+.show {
+  visibility: visible;
+}
+
 .description {
   white-space: pre-wrap;
 }

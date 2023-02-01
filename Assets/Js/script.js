@@ -23,10 +23,17 @@ $(document).ready(function(){
     let time = $(this).parent().attr('id');
 
     localStorage.setItem(time,value);
+    
+    $(".notify").addClass("show");
+    setTimeout(showNotification,5000);
   });
 
+  function showNotification(){
+    $(".notify").removeClass("show");
+  }
+
   function updateTimeBlock(){
-    let currentHour =dayjs.hour();
+    let currentHour =dayjs().hour();
     console.log(currentHour);
 
     $(".time-block").each(function(){
@@ -35,8 +42,11 @@ $(document).ready(function(){
 
       if (blockHour < currentHour){
         $(this).addClass("past");
+        $(this).removeClass("future");
+        $(this).removeClass("present");
       } else if (blockHour === currentHour){
         $(this).removeClass("past");
+        $(this).removeClass("future");
         $(this).addClass("present");
       }else if (blockHour>currentHour){
         $(this).removeClass("past");
