@@ -1,7 +1,7 @@
 # Third-party-api-work-day-scheduler
 
 ## Description
-This webpage JavaScript code was incomplete and the generate password button was not working. New code was added, to jascript, that included making a user choose the lenght of the password. The user can also choose whether they want numbers, special characters, uppercase characters, and lowercase characters. All passwords are generated at random accordingly to what character choices the user wants included. After the choices are made the password will be displayed on the screen. 
+This webpage's JavaScript code was incomplete and not working correctly. The input entered was not was not saving to local storage. New blocks were added for time in the day. New code that was written made it possible to your input to local storage. New code was written for a timer to appear when you save your input. The new code also includes a change of color for the time sections according to the times of day.
 
 ## Links
 
